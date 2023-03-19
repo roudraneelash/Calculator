@@ -1,13 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  background-color: black;
+  max-width: 34rem;
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.display-container {
+  background-color: orange;
+  height: 10.5rem;
+  padding: 1.2rem;
+  text-align: right;
+  line-height: 0.2;
+}
+.primary {
+  font-size: 3.2rem;
+  height: auto;
+}
+
+.primary:empty {
+  height: 3.2rem;
+}
+
+.secondary {
+  font-size: 2.4rem;
+  color: grey;
+}
+.secondary:empty {
+  height: 2.4rem;
+}
+.keypad-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  padding: 1.2rem;
+  justify-items: center;
+  align-items: center;
+}
+.btn {
+  background-color: #212529;
+  color: #f1f3f5;
+  border: none;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 40%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+.secondary-gray {
+  background-color: #495057;
+  font-size: 2.4rem;
+}
+.secondary-indigo {
+  background-color: #91a7ff;
+  font-size: 2.4rem;
 }
